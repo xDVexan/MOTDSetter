@@ -1,0 +1,30 @@
+name: MOTDSetter
+main: me.featureable.motdsetter.MOTDSetter
+version: 1.0
+author: Featureable
+website: www.featureable.cf
+prefix:
+commands:
+   motdhelp:
+      description: MOTDSetter help.
+      usage: /<command>
+   setmotd:
+      description: Set the MOTD of the server.
+      usage: /<command> motd
+   motdreload:
+      description: Reload the config.yml.
+      usage: /<command>
+      
+permissions:
+   motdsetter.help:
+      description: This permission allows a player to execute the /motdhelp command.
+      default: op
+   motdsetter.set:
+      description: This permission allows a player to set the motd.
+      default: op
+   motdsetter.reload:
+      description: This permission allows a player to reload the config.yml.
+      default: op
+   motdsetter.*:
+      description: This permission allows a player to execute all commands in MOTDSetter.
+      default: op
